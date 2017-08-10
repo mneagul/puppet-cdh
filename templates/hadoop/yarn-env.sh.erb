@@ -1,5 +1,8 @@
 # Note: This file is managed by Puppet.
 
+# Fix for EO4SEE
+export HADOOP_CLASSPATH=$HADOOP_CLASSPATH:/usr/share/java/slf4j-simple.jar
+
 # User for YARN daemons
 export HADOOP_YARN_USER=${HADOOP_YARN_USER:-yarn}
 
